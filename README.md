@@ -1,2 +1,2 @@
 # developmentforms
-Includes assignment one and two. 
+Includes assignments one and two. 
