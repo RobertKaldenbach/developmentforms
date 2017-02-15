@@ -12,8 +12,14 @@ Triangle.prototype.kind = function() {
 	var b = this.triangle[1];
 	var c = this.triangle[2];
   
-  
- // Returns the correct triangle 
+  if (a < 0) 
+		throw "Only positive length sides are allowed";
+	if (a * b * c == 0)
+		throw "Triangle cannot have zero area";
+	if (a + b < c)
+		throw "Not a valid triangle";  
+ 
+// Returns the correct triangle 
   
 	if (a === b && b === c)
 		return "equilateral";
@@ -23,11 +29,6 @@ Triangle.prototype.kind = function() {
   
   //Error message in case it is not a triangle 
  
-  if (a < 0) 
-		throw "Only positive length sides are allowed";
-	if (a * b * c == 0)
-		throw "Triangle cannot have zero area";
-	if (a + b < c)
-		throw "Not a valid triangle";  
+
   
 }; 
