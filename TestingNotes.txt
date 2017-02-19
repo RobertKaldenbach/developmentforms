@@ -1,0 +1,17 @@
+Notes from testing the Deck of Cards class.
+
+After reviewing the code I noticed that the cards() function does not have an opening bracket.  Also the shuffle() function returns $cards instead of $cards 2.
+
+I added the bracket and corrected the return.
+
+I ran the class using an Xampp localhost server and calling the class and function above the class.
+
+cards() wokred correctly and created an unshuffled deck.
+
+running $deck->shuffle($cards);  I only recieved one card as a return not a shuffled deck. If you check the foreach you will notice that you are resetting the array in each loop.
+
+However if you put a var_dump of $cards 2 in the loop you will find that even if you were not resetting the array that you would end up with duplicates of some cards and you are completly dropping other cards.  So I'd advise that you revisit this logic and come up with something that will return a full shuffled deck.  Also feel free to look at the php manual and see what array functions you can use to make your life easier.
+
+
+
+
