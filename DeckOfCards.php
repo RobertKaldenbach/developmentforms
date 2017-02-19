@@ -8,7 +8,7 @@
 	 
     //Builds deck with two arrays to hold different suits and faces.      
     
-    public static function cards () 
+    public static function cards () {
         
     $suits = array ( "Spades", "Hearts", "Clubs", "Diamonds" ); 
     $faces = array ( "Two","Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen",     
