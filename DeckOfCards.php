@@ -42,7 +42,7 @@ public static function shuffle (array $cards) {
 			 $card2 = $cards[$card2_index];
     }
     
-    return $cards; 
+    return $card2; 
 
 }
 }
